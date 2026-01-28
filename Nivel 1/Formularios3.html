@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba HTML5</title>
+</head>
+<body>
+ <form method="get" action="">
+    <label style="display: block;">
+        Nombre:
+        <input type="text" name="InputName" id="InputName">
+    </label>
+    <br>
+
+    <label style="display: block;">
+        Correo electronico:
+        <input type="email" name="InputCorreo" id="InputCorreo">
+    </label>
+<br>
+
+    <label style="display: block;">
+        URL:
+        <input type="url" name="InputURL" id="InputURL" placeholder="Ingresa la URL de tu pagina">
+    </label>
+<br>
+
+    <!-- input:text#Id.Class[atributos=valores] -->
+    <label style="display:block">
+        Fecha:
+        <input type="date" name="InputDate" id="InputDate">
+    </label>
+<br>
+
+    <label style="display:block">
+        Tiempo:
+        <input type="time" name="InputTime" id="InputTime">
+    </label>
+<br>
+
+    <label style="display:block">
+        Fecha y hora:
+        <input type="datetime-local" name="InputDateTime" id="InputDateTime">
+        <!-- datetime no muestra correctamente en VSC -->
+    </label>
+<br>
+
+    <label style="display:block">
+        Mes:
+        <input type="month" name="Inputmonth" id="Inputmonth">
+    </label>
+<br>
+
+    <label style="display:block">
+        Semana:
+        <input type="week" name="InputWeek" id="InputWeek">
+    </label>
+<br>
+
+    <label style="display:block">
+        Numero (min -10, max 10):
+        <input type="range" name="InputRange" oninput="valorDisplay.value = this.value" id="InputRange" min="-10" max="10">
+        <output id="valorDisplay">0</output>
+    </label>
+<br>
+
+    <label style="display:block">
+        Telefono:
+        <input type="tel" name="InputTel" id="InputTel">
+    </label>
+<br>
+
+    <label style="display:block">
+        Termino de busqueda:
+        <input type="search" name="InputSearch" id="InputSearch">
+    </label>
+<br>
+
+    <label style="display:block">
+        Color favorito
+        <input type="color" name="InputColor" id="InputColor">
+    </label>
+<br>
+
+    <input type="submit" value="Enviar">
+</form>   
+</body>
+</html>

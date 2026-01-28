@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+</head>
+<body>
+<form method="get" action="">
+    <h2>Formulario de registro</h2>
+
+    <label style="display:block">
+        Nombre:
+        <input type="text" maxlength="50" placeholder="Nombre" id="InputName" name="InputName">
+    </label>
+    <br>
+
+    
+    <label style="display:block">
+        Apellidos:
+        <input type="text" maxlength="50" placeholder="Apellido/s" id="InputLastname" name="InputLastName">
+    </label>
+    <br>
+
+    <label style="display:block">
+        Sexo: 
+        <label >
+            <input type="radio" name="InputSex" value="Hombre">
+            Hombre
+        </label>
+        <label>
+            <input type="radio" name="InputSex" value="Mujer">
+            Mujer
+        </label>
+    </label>
+    <br>
+
+    <label style="display:block">
+        Correo:
+        <input type="email" id="InputEmail" name="InputEmail" placeholder="Correo electrónico">
+    </label>
+    <br>
+
+    <label style="display: block;">
+        Población
+        <select name="poblacion" id="poblacion">
+            <option>Alicante</option>
+            <option>Madrid</option>
+            <option>Sevilla</option>
+            <option>Valencia</option>
+        </select>
+    </label>
+    <br>
+
+    <label style="display:block">
+        <p>Descripción</p>
+        <textarea 
+        rows="6"
+        cols="60"
+        placeholder="Detalla una descripcion"></textarea>
+    </label>
+    <br>
+
+    <label style="display:block">
+        <input type="checkbox" checked>
+        Deseo recibir información sobre novedades y ofertas
+    </label>
+    <br> 
+
+    <label style="display:block">
+        <input type="checkbox">
+        Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+    </label>
+    <br>
+
+    <label style="display:block">
+        <input type="submit">
+    </label>
+    
+</form>
+</body>
+</html>
