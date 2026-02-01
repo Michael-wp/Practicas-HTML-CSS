@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 60em;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.ContenedorGeneral {
+    display: flex;
+}
+
+.ContenedorGeneral .DatosLibro {
+    width: 16em;
+}
+
+.ContenedorGeneral .Descripcion {
+    width: 44em;
+}
+
+.ContenedorGeneral .Descripcion p {
+    margin-bottom: 15px;
+}
+
+.ContenedorGeneral h2 {
+    margin: 15px 0px;
+}
+
+.ContenedorGeneral .Descripcion ul {
+    display: flex;
+}
+
+.ContenedorGeneral .Descripcion ul li {
+    width: 14em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
