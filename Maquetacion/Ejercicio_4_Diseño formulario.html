@@ -1,0 +1,131 @@
+<!-- 
+ 
+    Desarrolladores: Michael Galeano y Alex Urquiza.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Ejercicio_4_Diseño formulario.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>iDESWEB</h1>
+
+        <h3>Formulario de registro</h3>
+        <form action="" method="get">
+            <fieldset>
+                <legend>¿QUIEN ERES?</legend>
+                <label for="RegisterName">Nombre</label>
+                    <input type="text" id="RegisterName" autocomplete="name" />
+                <label for="RegisterLastName">Apellido</label>
+                    <input type="text" id="RegisterLastName" autocomplete="name">
+                <label for="RegisterEmail">Correo Electronico</label>
+                    <input type="email" id="RegisterEmail">
+                <label for="RegisterDate">Fecha de nacimiento</label>
+                    <input type="date" id="RegisterDate">
+            </fieldset>
+
+            <fieldset>
+                <legend>¿DE DONDE ERES?</legend>
+                <label for="RegisterCity">Ciudad</label>
+                    <input type="text" id="RegisterCity" autocomplete="name" />
+                <label for="RegisterCP">Codigo Postal</label>
+                    <input type="text" id="RegisterCP" autocomplete="postal-code">
+                <label for="RegisterCountry">Pais</label>
+                    <select name="RegisterCountry" id="RegisterCountry">
+                        <option id="PresentacionOp" value="" selected disabled hidden>País</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Japon">Japon</option>
+                        <option value="Brasil">Brasil</option>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿COMO QUIERES INICIAR SESION?</legend>
+                <label for="RegisterUserName">Nombre de usuario</label>
+                    <input type="text" id="RegisterUserName" autocomplete="name" />
+                <label for="RegisterPassd">Contraseña</label>
+                    <input type="password" id="RegisterPassd" >
+                <label for="RegisterRepeatPassd">Verificar contraseña</label>
+                    <input type="password" id="RegisterRepeatPassd" > 
+            </fieldset>
+
+            <fieldset>
+                <legend>CONDICIONES DE REGISTRO</legend>
+                <p>Desea recibir ofertas de iDESWEB</p>
+                <div class="OpcionesRadio">
+                    <label>
+                        <input name="InputOfertas" type="radio">Una vez al dia
+                    </label>
+                    <label>
+                        
+                        <input name="InputOfertas" type="radio">Una vez a la semana
+                    </label>
+                    <label>
+                        <input name="InputOfertas" type="radio">Una vez al mes
+                    </label>
+                </div>
+
+                <label for="InputConditions">
+                    <input type="checkbox">Acepto el acuerdo de servicios, la declaracion de privacidad y la declaracion de uso de cookies 
+                </label>
+            </fieldset>
+
+            <button>Crear Cuenta</button>
+        </form>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
