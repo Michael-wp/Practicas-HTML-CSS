@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+}
+
+/* Modificacion - Listas */
+main .DataExperience > section ul li {
+    color: blue;
+}
+main .DataExperience > section strong {
+    color: black;
+}
+
+main .DataPriv ul li{
+    list-style-type: none;
+}
+
+/* Modificacion - Titulos */
+header {
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Adaptabilidad por columnas */
+
+@media (min-width: 600px){
+    main .DataExperience {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main {
+        margin: 0;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    main .DataPriv {
+        margin-left: 15px;
+    }
+
+    main .DataPriv, main .DataExperience {
+        flex: 1 0 auto;
+    }
+
+    main .DataPriv ul li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 1200px){
+    main .DataExperience {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    main .DataPriv ul li{
+        display: list-item;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-bottom: 8px;
+    }
+}
+
