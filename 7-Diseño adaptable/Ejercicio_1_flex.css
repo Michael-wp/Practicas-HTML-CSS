@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -9,91 +9,89 @@ body {
     flex-direction: column;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 20px;
-}
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* Primero empiezo con la version mobil */
 
-/* Modificacion - Listas */
-main .DataExperience > section ul li {
-    color: blue;
-}
-main .DataExperience > section strong {
-    color: black;
-}
-
-main .DataPriv ul li{
-    list-style-type: none;
-}
-
-/* Modificacion - Titulos */
 header {
-    margin: 20px;
+    margin: 10px;
+}
+
+main {
+    margin: 10px;
 }
 
 h2 {
-    margin-bottom: 15px;
+    border-bottom: 1px solid black;
 }
 
-/* Adaptabilidad por columnas */
+ul li {
+    list-style-type: none;
+}
+
+h2, ul li {
+    margin-bottom: 10px;
+}
+
+.DataExperience ul li {
+    color: blue;
+}
+
+ul li strong {
+    color: black;
+    display: block;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* Version de 600px a 1200px */
 
 @media (min-width: 600px){
-    main .DataExperience {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+
+    h2 {
+        border: none;
     }
 
     main {
-        margin: 0;
-        justify-content: flex-start;
+        display: flex;
         gap: 50px;
     }
 
-    main .DataPriv {
-        margin-left: 15px;
-    }
-
-    main .DataPriv, main .DataExperience {
-        flex: 1 0 auto;
-    }
-
-    main .DataPriv ul li{
-        display: flex;
-        flex-direction: column;
+    main section {
         margin-bottom: 15px;
     }
+
+    main .DataExperience ul li {
+        margin-bottom: 0px;
+        list-style-type: disc;
+    }    
+
+    main .DataExperience ul li strong {
+        display: inline;
+    }
+
 }
+
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* Version mayor a 1200px */
 
 @media (min-width: 1200px){
+    main .DataPriv ul li {
+        margin-bottom: 0px;
+    }
+
+    main .DataPriv ul li strong {
+        display: inline;
+    }
+
     main .DataExperience {
         display: flex;
-        flex-direction: row;
-        gap: 200px;
+        gap: 100px;
     }
 
-    main .DataPriv ul li{
-        display: list-item;
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 600px){
     main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    h2 {
-        border-bottom: 1px solid black;
-    }
-
-    ul li {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        margin-bottom: 8px;
+        gap: 100px;
+        justify-content: center;
     }
 }
-
