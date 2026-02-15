@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* VERSION 0px - 600px */
+
+ul li {
+    list-style-type: none;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+main .DataBook > ul li {
+    display: inline-block;
+}
+
+main section > h2 {
+    margin-bottom: 20px;
+}
+
+main .DescriptionBook > p {
+    margin-top: 20px;
+}
+
+main .ContentBook {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+main .ContentBook > p {
+    margin-bottom: 20px;
+}
+
+main .ContentBook > ul li {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+/* VERSION 600px - 1200px */
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    main .DataBook {
+        grid-row: span 2;
+    }
+
+    main .DataBook > ul li {
+        display: list-item;
+        list-style-type: disc;
+        margin-left: 30px;
+    }
+
+    main .ContentBook {
+        grid-row: 2/-1;
+        grid-column: 2/-1;
+    }
+
+    main .ContentBook > ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 5px;
+    }
+
+    main .ContentBook > ul li {
+        list-style-type: none;
+    }
+}
+
+/* VERSION 1200px en adelante */
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    main .DataBook {
+        grid-row: span 1;
+    }
+
+    main .ContentBook {
+        grid-row: span 1;
+        grid-column: 3/-1;
+    }
+    
+    main .ContentBook > ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    main .ContentBook > ul li {
+        display: list-item;
+        list-style-type: disc;
+    }
+}
